@@ -1,0 +1,6 @@
+.nav1:hover {
+  background-color: red !important;
+  transition: 0.3s linear;
+  border-radius: 10px;
+  transform: scale(0.8);
+}

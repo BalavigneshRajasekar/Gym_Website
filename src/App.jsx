@@ -3,11 +3,12 @@ import { useState } from "react";
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Nav from "./components/nav";
 
 function App() {
   return (
     <>
-      <h1 className="text-center">Gym website</h1>
+      <Nav></Nav>
     </>
   );
 }
