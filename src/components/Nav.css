@@ -4,3 +4,9 @@
   border-radius: 10px;
   transform: scale(0.8);
 }
+
+.nav1 {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+}

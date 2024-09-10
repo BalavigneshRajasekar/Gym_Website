@@ -39,13 +39,18 @@ function Nav() {
     setAnchorElUser(null);
   };
 
+  const Navigation = (e) => {
+    console.log(e.target.innerText);
+  };
+
   return (
     <>
-      <AppBar position="static" className="bg-dark">
+      <AppBar className="bg-dark">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <MenuItem sx={{ display: { xs: "none", md: "block" }, mr: 1 }}>
               <Image
+                preview={false}
                 width={50}
                 src="public/GymIcon.png"
                 className="rounded-5"
@@ -195,10 +200,14 @@ function Nav() {
                 display: { xs: "none", md: "flex", justifyContent: "end" },
               }}
             >
-              <MenuItem className="nav1">
+              <a
+                className="nav1"
+                onClick={(e) => Navigation(e)}
+                href="#services"
+              >
                 <FitnessCenterIcon sx={{ marginRight: 1 }} />
                 Services
-              </MenuItem>
+              </a>
               <MenuItem className="nav1">
                 <CurrencyBitcoinIcon sx={{ marginRight: 1 }} />
                 Subscriptions
